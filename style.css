@@ -18,3 +18,10 @@ body{
     color:black;
     background-color: azure;
 }
+table,tr,td,tbody{
+    padding: 8px;
+    mask-border-mode:alpha;
+    border-radius: 10px;
+    background-color:transparent;
+    margin: 2px; 
+}
