@@ -1,0 +1,20 @@
+.alert{
+    margin-top:auto;
+}
+body{
+    margin-top: 0%;
+    background-image: url(images.jpg); background-repeat: no-repeat; background-size: cover;
+}
+.U-19{
+    font-weight: bolder;
+}
+.marquee{
+    color: crimson; font-size: x-large;
+}
+.ABC{
+    font-variant: small-caps; font-weight: bolder;
+}
+.describe:hover{
+    color:black;
+    background-color: azure;
+}
