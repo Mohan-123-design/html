@@ -5,6 +5,10 @@ body{
     margin-top: 0%;
     background-image: url(images.jpg); background-repeat: no-repeat; background-size: cover;
 }
+.form{
+    background-image:url(https://lidenz.com/wp-content/uploads/2014/06/stunning-chess-event.jpg);
+    background-size: cover;
+}
 .U-19{
     font-weight: bolder;
 }
@@ -20,8 +24,28 @@ body{
 }
 table,tr,td,tbody{
     padding: 8px;
-    mask-border-mode:alpha;
-    border-radius: 10px;
-    background-color:transparent;
     margin: 2px; 
+}
+#table{
+    border-collapse:separate;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(62, 55, 55, 0.15);
+    /*background-color:rgb(235, 177, 161);*/
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/chess-board-87-gull-g.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+.input{
+    background: transparent;
+}
+.input:hover{
+    color:black;
+    background-color: antiquewhite;
+}
+#rules:hover{
+    color: black;
+}
+#rules{
+    background-color: cornsilk;
+    border: 1;
 }
