@@ -5,80 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register form</title>
-    <link rel="shortcut icon" href="D:\images\Google-favicon-vector.png" type="image/x-icon">
+    <link rel="shortcut icon" href="D:\html\html\icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="form">
+<body>
+    <div id="tablediv">
+        <center>
+            <table id="table"><br>
+                <thead>
+                    <center style="color: rgb(49, 21, 173);"><u>REGISTRATION FORM</u>
+                </thead>
+                <br>
+                    <form>
+                        <tbody>
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text" placeholder="Enter your Name" class="input"></td>
+                            </tr>
+                            <tr>
+                                <td>Age:</td>
+                                <td><input type="number" name="" id="" placeholder="Enter your Age" class="input"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td><input type="radio" name="Gender" class="input">Male <input type="radio" name="Gender"
+                                        class="input">Female</td>
+                            </tr>
+                            <tr>
+                                <td>Address:</td>
+                                <td><textarea name="" class="input" placeholder="Enter your Address"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Education:</td>
+                                <td><select name="Education" class="input" style="width: fit-content;">
+                                        <option>SSLC</option>
+                                        <option>HSC</option>
+                                        <option>UG</option>
+                                        <option>PG</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="" placeholder="Enter the Email" class="input"></td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number:</td>
+                                <td><input type="tel" name="" placeholder="Enter the Mobile Number" class="input"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="input"><input type="checkbox" name="">Agree with all rules and
+                                    regulations</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <center><input type="reset" value="Reset" class="input">&nbsp; <input type="button"
+                                            value="Submit" class="input"></center>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </center>
+            </table>
+        </center>
+        
+    </div>
     <center>
-        <table id="table"><br>
-            <thead>
-                <center style="color: rgb(205, 235, 34);"><u>REGISTRATION FORM</u></center>
-            </thead>
-            <br>
-            <form>
-                <tbody>
-                    <tr>
-                        <td>Name:</td>
-                        <td><input type="text" placeholder="Enter your Name" class="input"></td>
-                    </tr>
-                    <tr>
-                        <td>Age:</td>
-                        <td><input type="number" name="" id="" placeholder="Enter your Age" class="input"></td>
-                    </tr>
-                    <tr>
-                        <td>Gender:</td>
-                        <td><input type="radio" name="Gender" class="input">Male <input type="radio" name="Gender"
-                                class="input">Female</td>
-                    </tr>
-                    <tr>
-                        <td>Address:</td>
-                        <td><textarea name="" class="input" placeholder="Enter your Address"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td>Education:</td>
-                        <td><select name="Education" class="input" style="width: fit-content;">
-                                <option>SSLC</option>
-                                <option>HSC</option>
-                                <option>UG</option>
-                                <option>PG</option>
-                            </select></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td><input type="email" name="" placeholder="Enter the Email" class="input"></td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number:</td>
-                        <td><input type="tel" name="" placeholder="Enter the Mobile Number" class="input"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="input"><input type="checkbox" name="">Agree with all rules and
-                            regulations</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <center><input type="reset" value="Reset" class="input">&nbsp; <input type="button"
-                                    value="Submit" class="input"></center>
-                        </td>
-                    </tr>
-                </tbody>
-            </form>
-        </table><br>
+        <br>
         <a href="D:\html\html\Untitled-1.html"> Back to Home</a> ||||
         <a href="#rules">Rules and regulations</a>
+        <a href="#payment"> Payment link</a>
     </center>
     <br>
     <br>
     <footer>
-        <div id="rules">
+<section>
+    <div id="box1"></div>
+    <div id="rules">
+        <center>
+            <b>Competition Rules</b>
             
-                <b>Competition Rules</b>
-            <ul>
-                <li>Chess Clock: Each player must make their moves within a specified time limit, controlled by a
-                    chess clock.</li>
+            <ul class="ullist">
+                <li>Chess Clock:  <br>Each player must make their moves within a specified time limit, controlled by a
+                    chess clock.</li> <br>
 
-                <li>Recording Moves: Players must record their moves on a scoresheet to keep track of the game.
+                <li>Recording Moves:  <br>Players must record their moves on a scoresheet to keep track of the game.
                 </li>
                 <li>Drawn Game: The game can end in a draw under several conditions, such as stalemate, threefold
                     repetition, or insufficient material to checkmate.
@@ -89,7 +100,7 @@
             </ul>
             <br>
             <b>Additional Regulations:</b>
-            <ul>
+            <ul class="ullist">
                 <li>
                     Anti-Cheating Measures: Organizers must implement anti-cheating measures, such as electronic device
                     checks
@@ -106,7 +117,7 @@
             </ul>
             <br>
             <b>Tournament Entry Fees</b>
-            <ul> The entry fees for various categories in national championships are as follows:
+            <ul class="ullist"> The entry fees for various categories in national championships are as follows:
 
                 <li> U-7 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
                 </li>
@@ -137,7 +148,7 @@
             </ul>
             <br>
             <b>Candidate Belongings</b>
-            <ul> Candidates participating in the tournament are expected to adhere to the following guidelines regarding
+            <ul class="ullist"> Candidates participating in the tournament are expected to adhere to the following guidelines regarding
                 their belongings:
                 <li> Electronic Devices: Players are not allowed to bring electronic devices, such as mobile phones,
                     tablets, or
@@ -159,8 +170,16 @@
                     will provide these items if necessary.
                 </li>
             </ul>
-            
-        </div>
+
+        </center>
+        
+    </div>
+    <div id="payment">
+        <center><img src="D:\html\html\Screenshot 2025-03-08 202505.png" alt="" width="250px" height="250px"></center>
+
+    </div>
+</section>
+     
     </footer>
 
 </body>
