@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <div id="navdiv">
+        <nav id="navbar">
+            <ul id="menu">
+                <li><a href="D:\html\html\Untitled-1.html">Home</a></li>
+                <li><a href="D:\html\html\2.html">Register form</a></li>
+                <li><a href="D:\html\html\2.html#rules">Rules</a></li>
+                <li><a href="D:\html\html\2.html#payment">Payment</a></li>
+                <li></li>
+            </ul>
+            <img src="logo.png" alt="" height="70px" width="70px" id="logo">
+        </nav>
+    </div>
     <div id="tablediv">
         <center>
             <table id="table"><br>
@@ -17,169 +29,180 @@
                     <center style="color: rgb(49, 21, 173);"><u>REGISTRATION FORM</u>
                 </thead>
                 <br>
-                    <form>
-                        <tbody>
-                            <tr>
-                                <td>Name:</td>
-                                <td><input type="text" placeholder="Enter your Name" class="input"></td>
-                            </tr>
-                            <tr>
-                                <td>Age:</td>
-                                <td><input type="number" name="" id="" placeholder="Enter your Age" class="input"></td>
-                            </tr>
-                            <tr>
-                                <td>Gender:</td>
-                                <td><input type="radio" name="Gender" class="input">Male <input type="radio" name="Gender"
-                                        class="input">Female</td>
-                            </tr>
-                            <tr>
-                                <td>Address:</td>
-                                <td><textarea name="" class="input" placeholder="Enter your Address"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td>Education:</td>
-                                <td><select name="Education" class="input" style="width: fit-content;">
-                                        <option>SSLC</option>
-                                        <option>HSC</option>
-                                        <option>UG</option>
-                                        <option>PG</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <td>Email:</td>
-                                <td><input type="email" name="" placeholder="Enter the Email" class="input"></td>
-                            </tr>
-                            <tr>
-                                <td>Phone Number:</td>
-                                <td><input type="tel" name="" placeholder="Enter the Mobile Number" class="input"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" class="input"><input type="checkbox" name="">Agree with all rules and
-                                    regulations</td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">
-                                    <center><input type="reset" value="Reset" class="input">&nbsp; <input type="button"
-                                            value="Submit" class="input"></center>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </form>
-                </center>
-            </table>
+                <form>
+                    <tbody>
+                        <tr>
+                            <td><label for="Name">Name:</label></td>
+                            <td><input type="text" placeholder="Enter your Name" class="input" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Age">Age:</label></td>
+                            <td><input type="number" name="" id="" placeholder="Enter your Age" class="input" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Gender">Gender:</label></td>
+                            <td><input type="radio" name="Gender" class="input">Male <input type="radio" name="Gender"
+                                    class="input">Female</td>
+                        </tr>
+                        <tr>
+                            <td><label for="Address">Address:</label></td>
+                            <td><textarea name="" class="input" placeholder="Enter your Address" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Education">Education:</label></td>
+                            <td> <select name="Education" class="input" required>
+                                    <option value="Education">Select the education</option>
+                                    <option>SSLC</option>
+                                    <option>HSC</option>
+                                    <option>UG</option>
+                                    <option>PG</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email:</label></td>
+                            <td><input type="email" name="" placeholder="Enter the Email" class="input" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Phone Number">Phone Number:</label></td>
+                            <td><input type="tel" name="" placeholder="Enter the Mobile Number" class="input" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Attach the Payment proof">Attach the Payment proof:</label></td>
+                            <td><input type="file" name="" id="" placeholder="Attach a file" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Payment Details">Payment Details:</label></td>
+                            <td><textarea name="" id="" placeholder="Enter the Payment ID/Number/Name" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="input"><input type="checkbox" name="" required>Agree with all rules and
+                                regulations</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <center><input type="reset" value="Reset" class="input" style="margin: 10px;">&nbsp;
+                                    <input type="button" value="Submit" class="input"></center>
+                            </td>
+                        </tr>
+                    </tbody>
+                </form>
         </center>
-        
+        </table>
+        </center>
+
     </div>
-    <center>
-        <br>
-        <a href="D:\html\html\Untitled-1.html"> Back to Home</a> ||||
-        <a href="#rules">Rules and regulations</a>
-        <a href="#payment"> Payment link</a>
-    </center>
     <br>
     <br>
     <footer>
-<section>
-    <div id="box1"></div>
-    <div id="rules">
-        <center>
-            <b>Competition Rules</b>
-            
-            <ul class="ullist">
-                <li>Chess Clock:  <br>Each player must make their moves within a specified time limit, controlled by a
-                    chess clock.</li> <br>
+        <section>
+            <div id="box1"></div>
+            <div id="rules">
 
-                <li>Recording Moves:  <br>Players must record their moves on a scoresheet to keep track of the game.
-                </li>
-                <li>Drawn Game: The game can end in a draw under several conditions, such as stalemate, threefold
-                    repetition, or insufficient material to checkmate.
-                </li>
-                <li> Conduct of Players: Players must behave in a sportsmanlike manner and follow the instructions of
-                    the arbiter.
-                </li>
-            </ul>
-            <br>
-            <b>Additional Regulations:</b>
-            <ul class="ullist">
-                <li>
-                    Anti-Cheating Measures: Organizers must implement anti-cheating measures, such as electronic device
-                    checks
-                    and surveillance.
-                </li>
-                <li>
-                    Dress Code: Players are expected to adhere to a dress code specified by the organizers.
+                <div id="crules">
+                    <center><b><u>Competition Rules</u></b></center>
 
-                </li>
-                <li>
-                    Arbiters: The role of the arbiter is to ensure fair play and resolve disputes during the game.
+                    <ul class="ullist">
+                        <li>Each player must make their moves within a specified time limit, controlled by a
+                            chess clock.</li>
 
-                </li>
-            </ul>
-            <br>
-            <b>Tournament Entry Fees</b>
-            <ul class="ullist"> The entry fees for various categories in national championships are as follows:
+                        <li>Players must record their moves on a scoresheet to keep track of the game.
+                        </li>
+                        <li> The game can end in a draw under several conditions, such as stalemate, threefold
+                            repetition, or insufficient material to checkmate.
+                        </li>
+                        <li> Players must behave in a sportsmanlike manner and follow the instructions of
+                            the arbiter.
+                        </li>
+                    </ul>
+                    <br>
+                    <center><b><u>Additional Regulations:</u></b></center>
 
-                <li> U-7 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> U-9 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> U-11 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> U-13 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> U-15 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> U-17 Open & Girls: ₹1,250 (Ordinary), ₹5,000 (Special)
-                </li>
-                <li> U-19 Open & Girls: ₹2,000 (Ordinary), ₹7,500 (Special)
-                </li>
-                <li> National Senior (Open): ₹3,750 (Ordinary), ₹12,500 (Special)
-                </li>
-                <li> National Senior (Women): ₹2,500 (Ordinary), ₹6,250 (Special)
-                </li>
-                <li> National Rapid: ₹1,250 (Ordinary), ₹2,500 (Special)
-                </li>
-                <li> National Blitz: ₹625 (Ordinary), ₹1,250 (Special)
-                </li>
-                <li> National School (Individual): ₹1,500
-                </li>
-                <li> National Amateur: ₹2,000
-                </li>
-            </ul>
-            <br>
-            <b>Candidate Belongings</b>
-            <ul class="ullist"> Candidates participating in the tournament are expected to adhere to the following guidelines regarding
-                their belongings:
-                <li> Electronic Devices: Players are not allowed to bring electronic devices, such as mobile phones,
-                    tablets, or
-                    smartwatches, into the playing area. These devices must be left in a designated area or with the
-                    organizers.
-                </li>
-                <li> Personal Items: Players are allowed to bring personal items, such as water bottles, snacks, and
-                    writing
-                    materials, into the playing area. However, these items must be kept in a manner that does not
-                    disturb other
-                    players.
-                </li>
-                <li>Identification: Players must carry a valid identification document, such as a passport or national
-                    ID card,
-                    for verification purposes.
-                </li>
-                <li>Chess Equipment: Players are encouraged to bring their own chess sets and clocks, although the
-                    organizers
-                    will provide these items if necessary.
-                </li>
-            </ul>
+                    <ul class="ullist">
+                        <li>
+                            Organizers must implement anti-cheating measures, such as electronic device
+                            checks
+                            and surveillance.
+                        </li>
+                        <li>
+                            Players are expected to adhere to a dress code specified by the organizers.
 
-        </center>
-        
-    </div>
-    <div id="payment">
-        <center><img src="D:\html\html\Screenshot 2025-03-08 202505.png" alt="" width="250px" height="250px"></center>
+                        </li>
+                        <li>
+                            The role of the arbiter is to ensure fair play and resolve disputes during the game.
 
-    </div>
-</section>
-     
+                        </li>
+                    </ul>
+                    <br>
+                    <center><u><b>Tournament Entry Fees</b></u></center>
+                    <ul class="ullist"> The entry fees for various categories in national championships are as follows:
+
+                        <li> U-7 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> U-9 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> U-11 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> U-13 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> U-15 Open & Girls: ₹1,250 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> U-17 Open & Girls: ₹1,250 (Ordinary), ₹5,000 (Special)
+                        </li>
+                        <li> U-19 Open & Girls: ₹2,000 (Ordinary), ₹7,500 (Special)
+                        </li>
+                        <li> National Senior (Open): ₹3,750 (Ordinary), ₹12,500 (Special)
+                        </li>
+                        <li> National Senior (Women): ₹2,500 (Ordinary), ₹6,250 (Special)
+                        </li>
+                        <li> National Rapid: ₹1,250 (Ordinary), ₹2,500 (Special)
+                        </li>
+                        <li> National Blitz: ₹625 (Ordinary), ₹1,250 (Special)
+                        </li>
+                        <li> National School (Individual): ₹1,500
+                        </li>
+                        <li> National Amateur: ₹2,000
+                        </li>
+                    </ul>
+                    <br>
+                    <center><u><b>Candidate Belongings</b></u></center>
+
+                    <ul class="ullist"> Candidates participating in the tournament are expected to adhere to the
+                        following guidelines regarding
+                        their belongings:
+                        <li> Electronic Devices: Players are not allowed to bring electronic devices, such as mobile
+                            phones,
+                            tablets, or
+                            smartwatches, into the playing area. These devices must be left in a designated area or with
+                            the
+                            organizers.
+                        </li>
+                        <li> Personal Items: Players are allowed to bring personal items, such as water bottles, snacks,
+                            and
+                            writing
+                            materials, into the playing area. However, these items must be kept in a manner that does
+                            not
+                            disturb other
+                            players.
+                        </li>
+                        <li>Identification: Players must carry a valid identification document, such as a passport or
+                            national
+                            ID card,
+                            for verification purposes.
+                        </li>
+                        <li>Chess Equipment: Players are encouraged to bring their own chess sets and clocks, although
+                            the
+                            organizers
+                            will provide these items if necessary.
+                        </li>
+                    </ul>
+                </div>
+                <br>
+            </div>
+            <div id="payment">
+                <center><img src="D:\html\html\qrcode.jpg" alt="" width="300px" height="300px"></center>
+            </div>
+        </section>
+
     </footer>
 
 </body>

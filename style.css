@@ -3,7 +3,7 @@
 }
 body{
     margin-top: 0%;
-    background-image: url(images.jpg); background-repeat: no-repeat; background-size: cover;
+    /*background-image: url(images.jpg); background-repeat: no-repeat; background-size: cover;*/
     padding: 0%;
     margin: 0%;
 }
@@ -16,23 +16,35 @@ body{
 .ABC{
     font-variant: small-caps; font-weight: bolder;
 }
-.describe:hover{
+/*.describe:hover{
     color:black;
     background-color: azure;
+}*/
+.describe{
+    border:  solid 3px;
+    border-color: black;
+    text-align: justify;
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 table,tr,td,tbody{
     padding: 8px;
-    margin: 2px; 
+    margin: 0%; 
 }
 #table{
-    border-collapse:separate;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(62, 55, 55, 0.15);
-    /*background-color:rgb(11, 9, 9);*/
+    /*background-color:rgb(11, 9, 9);
     background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/chess-board-87-gull-g.jpg);
     background-size: cover;
-    color: rgb(209, 209, 235);
-    border-color:black;
+    color: rgb(209, 209, 235);*/
+    border-color:revert;
+    border:2px solid;  
+    width: fit-content;
 }
 .input{
     background: transparent;
@@ -44,18 +56,171 @@ table,tr,td,tbody{
 #rules:hover{
     color: black;
 }
-#rules{
-    background-color: cornsilk;
-    border: 1;
-}
 #box1{
-    height: 90px;
+    height: 50px;
     width:auto;
-    background-color: rgb(240, 160, 39);
+    /*background-color: rgb(240, 160, 39);*/
     border-radius: 5px;
     padding: 0%;
     margin: 0%;
 }
 .ullist{
-    list-style: none;
+    list-style:disc;
+}
+#crules{
+   /* height: 200px;
+    width: 600px;
+    text-rendering: optimizeLegibility;
+    margin-left: 10px;
+    border: solid 2px;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: absolute;
+    transform: translateY(-50%); /* Vertical centering */
+   /* animation: slideAcross 45s linear infinite; /* Smooth motion */
+   height: 800px; /* Height of the scrollable box */
+   overflow-y: auto; /* Enable vertical scrolling */
+   border: 3px solid black; /* Border for visibility */
+   padding: 10px;
+   margin-bottom: 10px;
+   backface-visibility: visible;
+   box-shadow: 2px;
+   border-radius: 20px;
+
+}
+
+#addreg{
+   /* height: 170px;
+    width: 600px;
+    text-rendering: optimizeLegibility;
+    margin-right: 10px;
+    border: solid 2px;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: absolute;
+    transform: translateY(-50%); /* Vertical centering */
+   /* animation: slideAcross 45s linear infinite; /* Smooth motion */
+   height: 200px; /* Height of the scrollable box */
+   overflow-y: auto; /* Enable vertical scrolling */
+   border: 1px solid #ccc; /* Border for visibility */
+   padding: 10px;
+   margin-bottom: 10px;
+}
+/*#entryfees {
+    /*height: 300px;
+    width: 600px;
+    text-rendering: optimizeLegibility;
+    margin-right: 10px;
+    border: solid 2px;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: absolute;
+    transform: translateY(-50%); /* Vertical centering */
+    /*animation: slideAcross 45s linear infinite; /* Smooth motion */
+    /*height: 200px; /* Height of the scrollable box */
+   /* overflow-y: auto; /* Enable vertical scrolling */
+   /* border: 3px solid black; /* Border for visibility */
+    /*padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px;
+    border-radius: 20px;*/
+
+#rules{
+    /*position: relative;
+    overflow: hidden;
+    height: 1000px;
+    width: 1000px;*/
+    max-width: 800px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+    text-align:justify;
+    font-size: 20px;
+    word-spacing: 11px;
+    line-height: 26px;
+   
+    
+}
+#canbel{
+   /* height: 300px;
+    width: 600px;
+    text-rendering: optimizeLegibility;
+    margin-right: 10px;
+    border: solid 2px;
+    background-color: burlywood;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: absolute;
+    transform: translateY(-50%); /* Vertical centering */
+    /*animation: slideAcross 45s linear infinite; /* Smooth motion */
+    height: 200px; /* Height of the scrollable box */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ccc; /* Border for visibility */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#menu li{
+    list-style:none;
+    padding: 10px;
+    margin-right: 15px;
+}
+#menu{
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    margin: 0%;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+#menu a:hover{
+    color: rgb(234, 68, 85);
+    font-stretch: expanded;
+}
+#menu a{
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+      justify-content: space-between; /* Ensures items are spaced */
+      align-items: center; /* Centers items vertically */
+}
+#navdiv{
+    margin-top: 0%;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+#logindiv{
+    height: 500px;
+    width:fit-content;
+    padding: 200px;
+    
+}
+#logintable{
+    border: 1px solid black;
+    color: aliceblue;
+    position: absolute;
+    height: 200px;
+    width: fit-content;
+}
+#login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(bkC9s.jpg);
+    background-size:auto
+}
+#Submit{
+    box-sizing: content-box;
+
+}
+#signup:hover{
+    text-decoration: none;
+    color: azure;
 }
