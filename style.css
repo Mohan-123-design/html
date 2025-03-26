@@ -188,10 +188,89 @@ table,tr,td,tbody{
     display: flex;
       justify-content: space-between; /* Ensures items are spaced */
       align-items: center; /* Centers items vertically */
+      
+}
+#navbar ul li :hover{
+    transition: 0.5s;
+    padding: 2px;
+    transform: scale(0.5s);
+    color: rgb(19, 19, 243);
+    background-color: rgb(255, 255, 255);
+    font-style: oblique;
+    float: left;
+}
+#navdiv {
+    width: 100%; /* Full width */
+    position: fixed; /* Keeps it in place */
+    top: 0; /* Positioned at the very top */
+    z-index: 1000; /* Ensures it's on top of other elements */
+    background-color: #ffffff; /* Optional, adds a background color */
+    box-shadow: 0px 4px 5px rgba(18, 17, 17, 0.1); /* Optional, adds a subtle shadow */
+  }
+  
+  #navbar {
+    display: flex; /* Aligns content in a row */
+    justify-content: space-between; /* Spaces out menu items and logo */
+    align-items: center; /* Vertically aligns items */
+    padding: 10px 20px; /* Adds spacing */
+    background-color: rgb(255, 255, 255);
+  }
+  #box1{
+    height: 100px;
+  }
+  #menu {
+    list-style-type: none; /* Removes default bullets */
+    display: flex; /* Aligns menu items horizontally */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+  }
+  
+  #menu li {
+    margin: 0 10px; /* Adds space between menu items */
+  }
+  
+  #menu a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* Changes text color */
+    font-weight: bold; /* Optional, makes text bold */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  #logo {
+    cursor: pointer; /* Adds a pointer cursor */
+  }
+#navbar ul :hover{
+    transition: 1s;
+    padding: 10px;
+    transform: scale(1s);
+    color: rgb(19, 12, 225);
+    background-color:#ffffff;
 }
 #navdiv{
     margin-top: 0%;
 }
+#chessboard{
+    perspective: 1000px;
+    transform-origin: center;
+  animation: rotate3D 5s infinite linear;
+}
+@keyframes rotate3D {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateX(360deg);
+    }
+  }
+  @keyframes rotate3D {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
 #logo{
     height: 60px;
     width: 60px;
@@ -223,4 +302,13 @@ table,tr,td,tbody{
 #signup:hover{
     text-decoration: none;
     color: azure;
+}
+
+.describe:hover{
+    transition: 1s ease;
+    transform: scale(1s);
+    padding: 10px;
+    background-color: rgb(4, 38, 39);
+    color: #e2d6d6;
+    border: ridge;
 }
