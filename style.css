@@ -32,8 +32,12 @@ body{
     border-radius: 5px;
 }
 table,tr,td,tbody{
-    padding: 8px;
-    margin: 0%; 
+    padding: 10px;
+    margin: 5px; 
+}
+table td{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #table{
     border-radius: 20px;
@@ -45,13 +49,15 @@ table,tr,td,tbody{
     border-color:revert;
     border:2px solid;  
     width: fit-content;
+    height: fit-content;
 }
 .input{
     background: transparent;
+    box-sizing: border-box;
 }
 .input:hover{
     color:black;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
 #rules:hover{
     color: black;
@@ -67,7 +73,7 @@ table,tr,td,tbody{
 .ullist{
     list-style:disc;
 }
-#crules{
+.crules{
    /* height: 200px;
     width: 600px;
     text-rendering: optimizeLegibility;
@@ -80,17 +86,37 @@ table,tr,td,tbody{
     position: absolute;
     transform: translateY(-50%); /* Vertical centering */
    /* animation: slideAcross 45s linear infinite; /* Smooth motion */
-   height: 800px; /* Height of the scrollable box */
-   overflow-y: auto; /* Enable vertical scrolling */
-   border: 3px solid black; /* Border for visibility */
-   padding: 10px;
+  /* height: 800px; /* Height of the scrollable box */
+   /*overflow-y: auto; /* Enable vertical scrolling */
+  /* border: 3px solid black; /* Border for visibility */
+   /*padding: 10px;
    margin-bottom: 10px;
    backface-visibility: visible;
    box-shadow: 2px;
-   border-radius: 20px;
+   border-radius: 20px;*/
 
+   border:  solid 3px;
+    border-color: black;
+    text-align: justify;
+    font-size: 20px;
+    word-spacing: 10px;
+    line-height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-
+.crules:hover{
+    transition: 0.5s ease-in;
+    transform: scale(0.5s);
+    padding: 10px;
+    background-color: rgb(41, 24, 1);
+    color: #e2d6d6;
+    border: ridge;
+}
+#space{
+    height: 20px;
+}
 #addreg{
    /* height: 170px;
     width: 600px;
@@ -305,10 +331,44 @@ table,tr,td,tbody{
 }
 
 .describe:hover{
-    transition: 1s ease;
-    transform: scale(1s);
+    transition: 0.5s ease-in;
+    transform: scale(0.5s);
     padding: 10px;
     background-color: rgb(4, 38, 39);
     color: #e2d6d6;
     border: ridge;
 }
+footer {
+    background-color: #f5c596; /* Light grey background */
+    color: #201d1d; /* Dark text color */
+    padding: 20px;
+    text-align: center; /* Centers content */
+    font-size: 16px; /* Text size */
+  }
+
+  .social-links a {
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    font-weight: bold;
+  }
+
+  .social-links a:hover {
+    color: #2c551c; 
+    font-style:italic;
+  }
+  .contact-info{
+    border: #000000;
+    background-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 800px;
+    
+  }
+  #contact-det{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffefe;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
