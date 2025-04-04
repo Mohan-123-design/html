@@ -372,3 +372,20 @@ footer {
     background-color: #fffefe;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+  #entry{
+    background-image:url(D:\html\html\d677abcbe1237554e85d94a9d3102d80.jpg);
+    background-size: cover;
+    height: max-content;
+    width: max-content;
+  }
+  #quote{
+    border: 2px solid black;
+    height: 35px;
+    width: max-content;
+  }
+  #quote:hover{
+    color: #ccc;
+    background-color: #333;
+    border-color: #e2d6d6;
+    touch-action: pinch-zoom;
+  }
